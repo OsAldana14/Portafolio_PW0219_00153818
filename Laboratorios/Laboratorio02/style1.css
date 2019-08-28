@@ -27,7 +27,7 @@
         text-transform: uppercase;
     }
     .btn:hover{
-        opacity: 0.5;
+        opacity: 1.0;
     }
     /*
         Sección Tamaños
