@@ -1,0 +1,104 @@
+$pcolor: black;
+$scolor: white;
+
+
+@mixin mainstyle {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100vh;
+    background-image: url(img/fondo1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 1em 5%;
+    margin: 0;
+    position: relative;
+}
+
+@mixin BotonHead{
+    width: 115px;
+    height: 35px;
+    border: none;
+    border-radius: 8%;
+    color: $scolor;
+    font-size: 10pt; 
+    margin-left: 5px;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+
+    &:hover{
+        background-color:$pcolor;
+        opacity: 0.5;
+    }
+}
+
+@mixin BotonFoot {
+    width: 85px;
+    height: 30px;
+    border: none;
+    border-radius: 8%;
+    background-color: gray;
+    color:$scolor;
+    text-decoration: underline $scolor;
+    font-size: 10pt;
+    margin-left: 5px;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+
+    &:hover{
+        background-color:$pcolor;
+        opacity: 0.5;
+    }
+}
+
+@mixin Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+@mixin Flexf{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 5px
+}
+
+@mixin img {
+    border: 1px solid $pcolor;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35vh;
+    flex-direction: column;
+}
+
+@mixin titulo {
+    color: $pcolor;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Stint Ultra Condensed', cursive;
+    margin: 10px;
+    letter-spacing: 5px; 
+}
+
+@mixin salto{
+    border: 3px solid $pcolor;
+    border-radius: 5px;
+    width: 450px;
+}
+
+@mixin bofo {
+    border-radius: 10%;
+    margin-top: 130px;
+    padding: 10px;
+}

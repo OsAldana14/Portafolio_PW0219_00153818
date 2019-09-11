@@ -1,0 +1,90 @@
+@import "init";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed&display=swap');
+/*font-family: 'Amatic SC', cursive;*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @include mainstyle();
+}
+
+.botonesHeader button{
+    @include BotonHead();
+}
+
+.botonesFooter button{
+    @include BotonFoot();
+}
+
+footer div{
+    display:flex;   
+    justify-content: space-between;
+
+}
+
+.botonesFooter{
+    width: 200vh;
+}
+
+.center {
+   @include center();
+
+}
+
+h1 {
+    @include titulo();
+}
+
+hr { 
+    @include salto();
+}
+
+.logos {
+   @include Flex();
+}
+
+img{
+    @include img();
+
+&:hover{
+    border:3px solid purple;
+    }
+}
+
+header{
+    @include Flexf();
+}
+
+footer{
+    @include Flexf();
+}
+
+.botonesFooter button {
+@include BotonFoot();
+
+}
+
+.botonesHeader > .botonOpen{
+    background-color: purple;
+}
+
+.botonesHeader>.botonDown{
+    background-color: blue;
+}
+
+.botonesHeader>.botonFAQ{
+    background-color: hotpink;
+}
+
+.botonesFooter>.botonCont{
+    @include bofo();
+
+}
+
+.botonesFooter>.botonHelp{
+    @include bofo();
+
+}
