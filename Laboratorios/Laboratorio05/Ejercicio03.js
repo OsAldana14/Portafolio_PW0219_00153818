@@ -9,5 +9,5 @@ var comparador = function(x,y){
     }
     }
 }
-
+var num = [1, 2, 3,4,1 , 2 , 3 , 4 , 3 , 3 , 3, 3, 3];
 comparador(num, 3);
